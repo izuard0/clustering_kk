@@ -1,0 +1,64 @@
+Semester,Kode Mata Kuliah,Mata Kuliah,SKS,MK Prasyarat
+1,UMG-55201-101,Pendidikan Pancasila,2,
+1,UMG-55201-105,Pendidikan Agama,3,
+1,UMG-55201-103,Bahasa Inggris,2,
+1,INF-55201-101,Matematika Dasar I,3,
+1,INF-55201-102,Logika Informatika,3,
+1,INF-55201-103,Dasar Pemrograman,4,
+1,INF-55201-104,Pengantar Teknik Informatika,2,
+2,UMG-55201-104,Kewarganegaraan,2,
+2,UMG-55201-102,Bahasa Indonesia,2,
+2,INF-55201-105,Probabilitas dan Statistik,3,
+2,INF-55201-106,Matematika Dasar II,3,Matematika Dasar I
+2,INF-55201-107,Organisasi dan Arsitektur Komputer,3,
+2,INF-55201-108,Dasar Rekayasa Perangkat Lunak,3,
+2,INF-55201-109,Struktur Data dan Algoritma,4,Dasar Pemrograman
+3,INF-55201-201,Perancangan Basis Data,2,
+3,INF-55201-202,Teori Graf,2,
+3,INF-55201-203,Matematika Diskrit,3,
+3,INF-55201-204,Metode Numerik,3,
+3,INF-55201-205,Jaringan Komputer,4,
+3,INF-55201-206,Strategi Algoritma,4,Struktur Data dan Algoritma
+3,INF-55201-207,Sistem Operasi,3,Organisasi dan Arsitektur Komputer
+4,INF-55201-208,Manajemen Basis Data,4,Perancangan Basis Data
+4,INF-55201-209,Otomata,2,Teori Graf
+4,INF-55201-210,Sistem Paralel dan Terdistribusi,3,Jaringan Komputer
+4,INF-55201-211,Pemrograman Berorientasi Objek,4,Strategi Algoritma
+4,INF-55201-212,Analisis dan Perancangan Sistem,3,
+4,INF-55201-213,Sistem Informasi,2,
+4,INF-55201-214,Sistem Pendukung Keputusan,3,
+5,INF-55201-301,Interaksi Manusia dan Komputer,2,
+5,INF-55201-302,Pemrograman Web,4,
+5,INF-55201-303,Pemrograman Jaringan,3,
+5,INF-55201-304,Sistem Tertanam,3,
+5,INF-55201-305,Kecerdasan Buatan,3,
+5,INF-55201-306,Manajemen Proyek Perangkat Lunak,2,Kecerdasan Buatan
+5,INF-55201-310,Penulisan Proposal Tugas Akhir,2,
+6,INF-55201-307,Teori Komputer Grafis,2,
+6,INF-55201-308,Kerja Praktik,2,Penulisan Proposal Tugas Akhir
+6,INF-55201-309,Keamanan Informasi dan Jaringan,3,
+6,INF-55201-312,Sosio dan Etika Profesi,2,
+6,INF-55201-313,MK Pilihan Wajib Komputasi,3,
+6,INF-55201-314,MK Pilihan Wajib Jaringan,3,Kerja Praktik
+6,INF-55201-316,Proyek Perangkat Lunak,4,
+7,INF-55201-401,Teknopreneur,3,
+7,INF-55201-402,PMKM,2,
+7,INF-55201-403,MK Pilihan 4,3,
+7,INF-55201-404,MK Pilihan 5,3,
+7,INF-55201-405,MK Pilihan 6,3,
+7,INF-55201-406,TA 1 (Proposal),2,Penulisan Proposal Tugas Akhir
+8,INF-55201-407,TA 2,4,
+wajib_kk,INF-55201-313,MK Pilihan Wajib Komputasi (PBA),3,
+wajib_kk,INF-55201-314,MK Pilihan Wajib Jaringan (Jaringan Nirkabel),3,
+wajib_kk,INF-55201-315,MK Pilihan Wajib Multimedia & SIG (SIG)*,3,
+opsi,INF-55201-506,Pengolahan Citra Digital (PL),3,
+opsi,INF-55201-515,Pemrograman Perangkat Bergerak (PL),3,
+opsi,INF-55201-516,Data Mining (PL),3,
+opsi,INF-55201-523,Komputasi Awan (PL),3,
+opsi,INF-55201-532,SIG II (PL),3,
+opsi,INF-55201-535,Instruksional Berbantuan Komputer /CAI (PL),3,
+opsi,INF-55201-538,Kriptografi (PL),3,
+opsi,INF-55201-539,Basis Data Multimedia (PL),3,
+opsi,INF-55201-542,Manajemen Rantai Pasok (PL),3,
+opsi,INF-55201-539,Fisika Model,3,
+opsi,INF-55201-531,Forensik Digital (PL),3,

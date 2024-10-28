@@ -5,10 +5,47 @@ from sklearn.preprocessing import StandardScaler
 import re
 from sklearn.metrics import silhouette_score
 import math
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
+import datetime 
+
+
+if not firebase_admin._apps:
+    cred = credentials.Certificate('latsar.json') 
+    default_app = firebase_admin.initialize_app(cred)
+
+db = firestore.client()
+
 #st.set_page_config(layout="wide")
 # Load research topics from CSV
 def load_topics():
     return pd.read_csv('Topik_Penelitian_dengan_Pembimbing_Terpisah.csv')
+
+
+
+
+
+
+# Fungsi untuk membaca data dari Firestore dan menggabungkan (append) data baru
+def save_to_firestore(data, collection_name):
+    try:
+        # Konversi data ke format yang sesuai untuk Firestore
+        data_dict = data.to_dict(orient='records')[0]
+        # Tambahkan timestamp
+        st.session_state.timestamp = datetime.datetime.now()    
+        data_dict['timestamp'] = st.session_state.timestamp  # Gunakan timestamp dari session state
+
+
+        # Simpan data ke Firestore
+        db.collection(collection_name).document().set(data_dict)
+        st.success(f"Data berhasil disimpan ke Firestore di koleksi '{collection_name}, tekan submit kembali untuk melanjutkan'")
+    except Exception as e:
+        st.error(f"Gagal menyimpan data ke Firestore: {e}")
+
+
+
+
 
 
 # Step 1: Halaman Input Nama dan NIM
@@ -143,6 +180,9 @@ def survey():
         
         df_klasifikasi = pd.DataFrame([hasil_klasifikasi])
         df_klasifikasi.to_csv('hasil_klasifikasi_dan_nama.csv', mode='a', header=False, index=False)
+        save_to_firestore(df_klasifikasi, "hasil_klasifikasi")
+        #store_in_google_drive(df_klasifikasi, 'hasil_klasifikasi_dan_nama.csv')
+
 
         st.session_state.start_survey = False
 

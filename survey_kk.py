@@ -11,9 +11,9 @@ from firebase_admin import firestore
 import datetime 
 
 
-if not firebase_admin._apps:
-    cred = credentials.Certificate('latsar.json') 
-    default_app = firebase_admin.initialize_app(cred)
+
+cred = credentials.Certificate('latsar.json') 
+default_app = firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
